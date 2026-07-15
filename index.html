@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Кофе и булки - ароматный кофе и свежая выпечка каждый день." />
+    <title>Кофе и булки</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="arrow-left" viewBox="0 0 24 24"><path d="m14.5 5-7 7 7 7M8 12h9" /></symbol>
+      <symbol id="arrow-right" viewBox="0 0 24 24"><path d="m9.5 5 7 7-7 7M16 12H7" /></symbol>
+      <symbol id="cart" viewBox="0 0 24 24"><path d="M3 4h2l2.3 10.2a2 2 0 0 0 2 1.55h7.85a2 2 0 0 0 1.95-1.56L20.6 8H6.2M10 20.2h.01M17.5 20.2h.01" /></symbol>
+      <symbol id="cup" viewBox="0 0 24 24"><path d="M5 8h12v5.7a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8ZM17 10h1a2.8 2.8 0 0 1 0 5.6h-1M8 3.5c0 1.4 1.5 1.6 1.5 3M12 3.5c0 1.4 1.5 1.6 1.5 3" /></symbol>
+      <symbol id="croissant" viewBox="0 0 24 24"><path d="M4.4 16.9c-1.8-2.4-.6-6.2 2.3-7.1.3 1.7 1.4 2.6 2.8 3-1-2.2-.4-5 1.4-6.7.9 1.5 2.4 2.2 4.1 2.2 1.8 0 3.2-.7 4.1-2.2 1.9 1.7 2.4 4.5 1.4 6.7 1.4-.4 2.5-1.3 2.8-3 2.9.9 4.1 4.7 2.3 7.1-1.5 2-4.1 2.8-6.5 1.7-1.8 1.2-4.2 1.2-6 0-2.5 1.1-5.1.3-6.6-1.7Z" transform="translate(-3.9 0) scale(1.18 1)" /><path d="M8.2 12.8c.2 2.2 1.2 4.2 3 5.7M12 10.5c0 3 .1 5.5 1.1 7.8M15.8 12.8c-.2 2.2-1.2 4.2-3 5.7" /></symbol>
+      <symbol id="leaf" viewBox="0 0 24 24"><path d="M12 20V9.5M12 14.5c-4.3-.1-6.7-2.5-7-6.6 3.5-.3 6.6 1.1 7 5M12 17c4.4-.2 6.7-2.7 7-6.8-3.6-.2-6.6 1.2-7 5M12 10.8C10.9 7.6 12.1 4.6 15.5 3c1.4 3.1.1 5.8-2.7 7.8" /></symbol>
+      <symbol id="bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8ZM9 8V6a3 3 0 0 1 6 0v2M9.5 13.5c1.5-1.3 3.5-1.3 5 0" /></symbol>
+      <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 10-7 10s-7-5-7-10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2.2" /></symbol>
+      <symbol id="phone" viewBox="0 0 24 24"><path d="M7.1 3.8 5.4 5.5c-1 1 1.2 6.2 5 10s9 6 10 5l1.7-1.7-3.4-3.4-2.1 1.2c-1.2-.7-2.5-1.8-3.7-3-1.2-1.2-2.3-2.5-3-3.7l1.2-2.1-3.4-3.4Z" /></symbol>
+      <symbol id="mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="1.5" /><path d="m4.5 7 7.5 5.8L19.5 7" /></symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Кофе и булки, на главную">
+        <span>Кофе и булки</span>
+        <small>...это кафе с ароматным кофе<br />и пышными булками.</small>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+      <nav class="header-nav" aria-label="Основная навигация">
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-dark header-order" href="#menu">Заказать</a>
+        <button class="cart-button" type="button" aria-label="Корзина: 0 товаров">
+          <svg><use href="#cart" /></svg><span class="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Кофе и свежая выпечка">
+        <div class="hero-copy">
+          <h1>Ароматный кофе<br />и свежая выпечка<br />каждый день</h1>
+          <p>Начните утро с любимого напитка<br />и нежной булочки в уютной атмосфере<br />нашего кафе.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#menu">Смотреть меню</a>
+            <a class="button button-outline" href="#about">О нас</a>
+          </div>
+        </div>
+        <div class="hero-controls">
+          <button class="round-button" type="button" aria-label="Предыдущий слайд"><svg><use href="#arrow-left" /></svg></button>
+          <div class="slider-dots" aria-label="Слайды"><button class="active" aria-label="Слайд 1"></button><button aria-label="Слайд 2"></button><button aria-label="Слайд 3"></button></div>
+          <button class="round-button" type="button" aria-label="Следующий слайд"><svg><use href="#arrow-right" /></svg></button>
+        </div>
+      </section>
+
+      <section class="benefits" id="delivery" aria-label="Преимущества">
+        <article><svg><use href="#cup" /></svg><h2>Качественный кофе</h2><p>Используем только отборные<br />зерна и свежее молоко</p></article>
+        <article><svg><use href="#croissant" /></svg><h2>Свежая выпечка</h2><p>Выпекаем каждый день<br />на нашей кухне</p></article>
+        <article><svg><use href="#leaf" /></svg><h2>Уютная атмосфера</h2><p>Тёплый интерьер и приятная<br />музыка для отдыха</p></article>
+        <article><svg><use href="#bag" /></svg><h2>Быстрая доставка</h2><p>Доставим ваш заказ<br />горячим и вовремя</p></article>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-heading"><h2>Наше меню</h2><a href="#menu">Смотреть всё меню <span>→</span></a></div>
+        <div class="products">
+          <article class="product-card"><img src="assets/cappuccino.jpg" alt="Капучино" /><div><h3>Капучино</h3><p>Нежный эспрессо<br />с молочной пенкой</p><strong>180 ₽</strong><button class="add-product" data-product="Капучино" type="button">В корзину</button></div></article>
+          <article class="product-card"><img src="assets/iced-latte.jpg" alt="Айс-латте" /><div><h3>Айс-латте</h3><p>Освежающий кофе<br />с молоком и льдом</p><strong>200 ₽</strong><button class="add-product" data-product="Айс-латте" type="button">В корзину</button></div></article>
+          <article class="product-card"><img src="assets/croissant.jpg" alt="Круассан" /><div><h3>Круассан</h3><p>Классический круассан<br />на сливочном масле</p><strong>120 ₽</strong><button class="add-product" data-product="Круассан" type="button">В корзину</button></div></article>
+          <article class="product-card"><img src="assets/cinnamon-roll.jpg" alt="Синнабон" /><div><h3>Синнабон</h3><p>Булочка с корицей<br />и нежной глазурью</p><strong>150 ₽</strong><button class="add-product" data-product="Синнабон" type="button">В корзину</button></div></article>
+          <article class="product-card"><img src="assets/cheesecake.jpg" alt="Чизкейк" /><div><h3>Чизкейк</h3><p>Нежный чизкейк<br />с ягодным соусом</p><strong>180 ₽</strong><button class="add-product" data-product="Чизкейк" type="button">В корзину</button></div></article>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <img src="assets/interior.jpg" alt="Интерьер кафе" />
+        <div class="about-copy"><h2>О нас</h2><p>«Кофе и булки» — это место, где начинается ваш день с чашки ароматного кофе и свежей выпечки. Мы создаём уютную атмосферу, чтобы вы могли отдохнуть, поработать или встретиться с близкими.</p><a class="button button-dark" href="#contacts">Подробнее о нас</a></div>
+        <svg class="leaf-decoration" viewBox="0 0 150 200" aria-hidden="true"><path d="M76 194c-4-73 18-125 61-177M73 126C39 112 24 83 25 51c29 8 48 28 49 75M82 104c28-20 43-47 39-76-28 15-42 39-39 76M86 155c31-3 53-23 62-51-29-2-52 15-62 51M69 163c-27-8-45-30-48-57 29 4 47 22 48 57" /></svg>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contacts">
+      <div class="footer-grid">
+        <section><h2>Контакты</h2><p><svg><use href="#pin" /></svg><span>ул. Кофейная, 15<br />Москва, Россия</span></p><p><svg><use href="#phone" /></svg><span>+7 (999) 123-45-67</span></p><p><svg><use href="#mail" /></svg><span>hello@coffee-buns.ru</span></p></section>
+        <section><h2>Часы работы</h2><p>Пн – Пт &nbsp;&nbsp;&nbsp;&nbsp; 07:30 – 21:00<br />Сб – Вс &nbsp;&nbsp;&nbsp;&nbsp; 08:00 – 22:00</p><p>Без перерывов<br />и выходных</p></section>
+        <section><h2>Мы в соцсетях</h2><div class="socials"><a href="#contacts" aria-label="ВКонтакте">VK</a><a href="#contacts" aria-label="Telegram">↗</a><a href="#contacts" aria-label="Instagram">◎</a></div></section>
+      </div>
+      <p class="copyright">© Кофе и булки, 2025</p>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
